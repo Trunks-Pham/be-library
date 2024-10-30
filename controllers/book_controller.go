@@ -55,6 +55,5 @@ func DeleteBook(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
-	database.DB.Delete(&book)
-	c.JSON(http.StatusOK, book)
+	c.Status(http.StatusNoContent)
 }

@@ -160,6 +160,7 @@ func TestUpdateBookNotFound(t *testing.T) {
 }
 
 // Test xóa một cuốn sách
+// Test xóa một cuốn sách
 func TestDeleteBook(t *testing.T) {
 	setupTestDB()
 
